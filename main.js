@@ -193,3 +193,11 @@ function signOut() {
             console.error("Sign out error:", error);
         });
 }
+
+// Add at the beginning of your main.js file
+document.addEventListener('DOMContentLoaded', function() {
+    // Hide preloader after content is loaded
+    setTimeout(() => {
+        document.querySelector('.preloader').style.display = 'none';
+    }, 2500);
+});
